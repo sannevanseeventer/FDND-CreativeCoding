@@ -180,7 +180,9 @@ window.requestAnimFrame = (function() {
     <img class="footer-image-mobile" src="/footer-mobile.svg" alt="background mobile">
 </div>
 
-<div class="container"></div>
+<div class="container">
+    <img class="footer-image-desktop" src="/footerbg.svg" alt="background mobile">
+</div>
 
 
 
@@ -227,12 +229,9 @@ window.requestAnimFrame = (function() {
       <li><a href="#contact">Neem contact op</a></li>
     </ul>
   </article>
-
-  <canvas id='stage'></canvas>
-
 </section>
 
-
+<canvas id='stage'></canvas>
 
 <style>
 
@@ -240,6 +239,10 @@ canvas {
   background-color: transparent;
   width: 100vw;
   height: 30rem;
+  z-index: 2;
+  position: absolute;
+  margin-top: 39rem;
+
 }
 
   h2 {
@@ -284,6 +287,11 @@ canvas {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
   }
+
+  .footer-image-desktop{
+    display:none;
+  }
+
   .footer-image-mobile{
     width: 100vw;
     z-index: 1;
@@ -301,13 +309,38 @@ canvas {
   }
 
   @media screen and (min-width: 720px) {
+
+    .footer-image-mobile{
+    display: none;
+  }
+
+  .footer-image-desktop{
+    display: block;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+  }
+
+  section{
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 5rem;
+  }
+
+  canvas {
+  margin-top: 26rem;
+
+}
+
     h2 {
       margin-bottom: 1.5rem;
       margin-top: 2rem;
     }
 
     .container {
-      flex-direction: row;
+    display: block;
+    flex-direction: row;
     }
 
     li {
