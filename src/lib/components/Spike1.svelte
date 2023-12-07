@@ -329,7 +329,7 @@ canvas {
   }
 
   canvas {
-  margin-top: 26rem;
+  margin-top: 5rem;
 
 }
 
