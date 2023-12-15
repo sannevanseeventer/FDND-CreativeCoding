@@ -109,15 +109,15 @@ addEventListener('mousemove', e => {
   margin: 16px;
   z-index: 10;
   position: relative;
-}
 
-#hamburger .line {
+& .line {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
   display: block;
   margin: 8px auto;
   transition: all 0.15s ease-in-out;
+}
 }
 
 
@@ -143,8 +143,8 @@ addEventListener('mousemove', e => {
   display: block;
   position: relative;
   text-transform: uppercase;
-}
-.inner-wrapper .menu-item {
+ 
+  & .menu-item {
   display: block;
   position: relative;
   margin-top: -0.25em;
@@ -153,6 +153,8 @@ addEventListener('mousemove', e => {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
+}
+
 .inner-wrapper .menu-item:hover {
   background: -webkit-linear-gradient(#000000 5%, white 85%);
   -webkit-background-clip: text;
