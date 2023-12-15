@@ -23,7 +23,7 @@ menuAnchor.addEventListener('click', function() {
 
 		gsap.set(parts, { y: -150, opacity: 0 });
 
-        const order = [0, 1, 2, 3, 4]; // Specify the order of items: Over, Expertise, Team, Kennisbank, Kansenkaart
+const order = [0, 1, 2, 3, 4]; // Specify the order of items: Over, Expertise, Team, Kennisbank, Kansenkaart
 
 order.forEach((index, i) => {
   const part = parts[index];
