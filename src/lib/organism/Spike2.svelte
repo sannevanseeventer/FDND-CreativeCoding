@@ -39,7 +39,7 @@ order.forEach((index, i) => {
       opacity: 1,
       rotate: Math.random() > 0.5 ? -2 : 2,
       ease: 'bounce',
-      duration: 1,
+      duration: 0.5,
       delay: i * 0.1 + (i === order.length - 1 ? 0.7 : 0.2),
     },
     i === order.length - 1 ? 0 : `-=${0.1}`
@@ -120,7 +120,6 @@ addEventListener('mousemove', e => {
 }
 }
 
-
 .menu-wrapper {
   width: 100%;
   height: 100%;
@@ -156,7 +155,7 @@ addEventListener('mousemove', e => {
 }
 
 .inner-wrapper .menu-item:hover {
-  background: -webkit-linear-gradient(#000000 5%, white 85%);
+  background: -webkit-linear-gradient(#4e94cd 5%, white 85%);
   -webkit-background-clip: text;
 }
 .inner-wrapper .menu-item:nth-child(1) {
