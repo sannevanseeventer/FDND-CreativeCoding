@@ -1,7 +1,9 @@
 <script>
+  // imports
     import {gsap}  from "gsap/dist/gsap";    
     import { onMount } from 'svelte';
 
+    // onMount
     onMount(() => {
     const parts = document.querySelectorAll('.menu-item');
 
@@ -23,7 +25,9 @@ menuAnchor.addEventListener('click', function() {
 
 		gsap.set(parts, { y: -150, opacity: 0 });
 
-const order = [0, 1, 2, 3, 4]; // Specify the order of items: Over, Expertise, Team, Kennisbank, Kansenkaart
+const order = [0, 1, 2, 3, 4]; // Volgorde van: Over, Expertise, Team, Kennisbank, Kansenkaart
+
+// geeft effect aan de menuitems per stuk
 
 order.forEach((index, i) => {
   const part = parts[index];
@@ -59,6 +63,7 @@ order.forEach((index, i) => {
 	}
 });
 
+// zorgt dat het menu beweegt met de muis
 addEventListener('mousemove', e => {
 	gsap.to('.inner-wrapper', {
 		rotateY: gsap.utils.mapRange(0, innerWidth, -5, 5, e.pageX),
