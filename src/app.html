@@ -35,14 +35,30 @@
 		--darkblue: #384b61;
 	}
 
-	html,
 	body {
-		width: 100%;
-		height: 100%;
-		margin: 0;
+		background: linear-gradient(-80deg, rgb(29, 73, 160), rgb(68, 151, 107), #1a7494, rgb(35, 180, 146));
+		overflow: hidden;
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+		min-height: 100vh;
 	}
 
-	body {
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	/* body {
 		font-family: "Montserrat", sans-serif;
 		background: linear-gradient(124deg, #0095ff, rgb(49, 193, 106), #547ab2, #67bf67, #59d36d, #5587a0, #1d6be8, #6bdc5a);
 		background-size: 1800% 1800%;
@@ -52,9 +68,9 @@
 		-z-animation: rainbow 18s ease infinite;
 		-o-animation: rainbow 18s ease infinite;
 		animation: rainbow 18s ease infinite;
-	}
+	} */
 
-	@-webkit-keyframes rainbow {
+	/* @-webkit-keyframes rainbow {
 		0% {
 			background-position: 0% 82%
 		}
@@ -108,5 +124,5 @@
 		100% {
 			background-position: 0% 82%
 		}
-	}
+	} */
 </style>
