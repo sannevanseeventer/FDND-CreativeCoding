@@ -23,7 +23,7 @@ Ontwerp en maak creatieve oplossingen voor de interface
 
 ##  Spike 2  👥
 
-"??"
+"Crazy abstract gradient fullscreen menu"
 
 ##  Spike 3  👥
 
